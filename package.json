@@ -9,6 +9,7 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"eslint-config-next": "^13.4.1",
 		"google-spreadsheet": "^3.3.0",
 		"localforage": "^1.10.0",
 		"mailgen": "^2.0.27",
@@ -36,6 +37,7 @@
 		"@types/react": "^18.0.21",
 		"autoprefixer": "^10.4.12",
 		"babel-plugin-inline-react-svg": "^2.0.1",
+		"eslint": "^8.40.0",
 		"imagemin-optipng": "^8.0.0",
 		"imagemin-svgo": "^10.0.1",
 		"postcss": "^8.4.18",
