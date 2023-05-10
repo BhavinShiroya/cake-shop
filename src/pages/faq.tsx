@@ -32,7 +32,7 @@ const accordionData = [
 
 export default function FAQ() {
 
-  console.log(process.env.GOOGLE_SERVICE_ACCOUNT_CLIENT_EMAIL);
+  console.log(process.env.NEXT_PUBLIC_GOOGLE_SERVICE_ACCOUNT_CLIENT_EMAIL);
   
   return (
     <Layout>
