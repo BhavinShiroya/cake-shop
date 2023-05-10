@@ -1,20 +1,20 @@
 export async function getCategories() {
   if (
     !(
-      process.env.GOOGLE_SERVICE_ACCOUNT_CLIENT_EMAIL &&
-      process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY &&
-      process.env.GOOGLE_SPREADSHEET_ID_CATEGORY
+      process.env.NEXT_PUBLIC_GOOGLE_SERVICE_ACCOUNT_CLIENT_EMAIL &&
+      process.env.NEXT_PUBLIC_GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY &&
+      process.env.NEXT_PUBLIC_GOOGLE_SPREADSHEET_ID_CATEGORY
     )
   ) {
     throw new Error(
-      "GOOGLE credentials must be set as env vars `GOOGLE_SERVICE_ACCOUNT_CLIENT_EMAIL` ,`GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY` and `GOOGLE_SPREADSHEET_ID_CATEGORY`."
+      "GOOGLE credentials must be set as env vars `NEXT_PUBLIC_GOOGLE_SERVICE_ACCOUNT_CLIENT_EMAIL` ,`NEXT_PUBLIC_GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY` and `NEXT_PUBLIC_GOOGLE_SPREADSHEET_ID_CATEGORY`."
     );
   }
   const { GoogleSpreadsheet } = require("google-spreadsheet");
-  const doc = new GoogleSpreadsheet(process.env.GOOGLE_SPREADSHEET_ID_CATEGORY);
+  const doc = new GoogleSpreadsheet(process.env.NEXT_PUBLIC_GOOGLE_SPREADSHEET_ID_CATEGORY);
   await doc.useServiceAccountAuth({
-    client_email: process.env.GOOGLE_SERVICE_ACCOUNT_CLIENT_EMAIL,
-    private_key: process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY.replace(
+    client_email: process.env.NEXT_PUBLIC_GOOGLE_SERVICE_ACCOUNT_CLIENT_EMAIL,
+    private_key: process.env.NEXT_PUBLIC_GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY.replace(
       /\\n/gm,
       "\n"
     ),
