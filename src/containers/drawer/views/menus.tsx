@@ -89,7 +89,7 @@ export default function DrawerMenu() {
         <div className="w-full h-90px bg-gray-100 flex justify-start items-center relative px-30px flex-shrink-0">
           <Link href="/">
             <a className="flex" onClick={hideMenu}>
-              <span className="sr-only">Medsy</span>
+              <span className="sr-only">Cake shop</span>
               <img
                 src="https://media.istockphoto.com/id/1403306417/photo/text-cake-stylized-as-a-birthday-cake-stylish-design-for-a-brand-label-or-advertisement-3d.jpg?b=1&s=170667a&w=0&k=20&c=rViQZhMgbuhzZNiXyF3pPeDNNa6QQm_Z4p6WlUWj_1Q="
                 alt="Girl in a jacket"

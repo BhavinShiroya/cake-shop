@@ -32,7 +32,7 @@ export default function Home({ products, categories }) {
           content="width=device-width, initial-scale=1, maximum-scale=1"
         />
         <meta name="Description" content="Put your description here." />
-        <title>Medsy</title>
+        <title>Cake shop</title>
       </Head>
 
       <HeroBlock />

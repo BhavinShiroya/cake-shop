@@ -42,7 +42,7 @@ export async function sendMail(from, to, subject, data) {
           'You can check the status of your order and more in your dashboard:',
         button: {
           color: '#3869D4',
-          text: 'Go to Medsy',
+          text: 'Go to Cake shop',
           link: 'https://medsy-modern.vercel.app',
         },
       },
